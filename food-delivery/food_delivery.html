@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food-Delivery</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0a0521a190.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-white">
+    <div class="d-flex flex-row gap-5">
+
+        <!-- Navbar -->
+
+        <div class="nav navbar fixed-top d-flex flex-column align-items-center position-sticky pt-5 pb-5">
+            <div class="mt-5"><a href="#"><i class="fa-solid fa-bars fa-lg" style="color: #000000;"></i></a></div>
+            <div><a href="#"><i class="fa-solid fa-heart fa-lg" style="color: #000000;"></i></a></div>
+            <div><a href="#"><i class="fa-solid fa-house-chimney fa-lg" style="color: #000000;"></i></a></div>
+            <div><a href="#"><i class="fa-solid fa-utensils fa-lg" style="color: #000000;"></i></a></div>
+            <div class="mb-5"><a href="#"><i class="fa-solid fa-book fa-lg" style="color: #000000;"></i></a></div>
+        </div>
+
+        <!-- Search bar -->
+
+        <div class="d-flex flex-column w-100 h-100">
+            <div class="search_bar w-100 d-flex flex-row align-items-center p-3 mt-3 gap-3 shadow rounded-2">
+                <div class="ms-3"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #797575;"></i></div>
+                <input type="search" placeholder="What would you like to eat?"
+                    class="search bg-transparent border-0 w-100">
+                <div class="me-5"><a href="#"><i class="fa-solid fa-bars fa-lg" style="color:#797575;"></i></a></div>
+            </div>
+
+            <!-- Image-Carousal -->
+            <div class="mt-5 w-100">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="assets/banner.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1500">
+                            <img src="assets/banner2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1500">
+                            <img src="assets/banner3.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Nav-Pages -->
+
+            <div class="d-flex flex-row justify-content-between pt-5">
+                <div class="d-flex flex-row gap-2">
+                    <div><i class="fa-solid fa-location-dot fa-lg" style="color: #FF5C28;"></i></div>
+                    <div class="fw-bold"><a href="#" class="text-black text-decoration-none">Nearby</a></div>
+                </div>
+                <div class="d-flex flex-row gap-2">
+                    <div><i class="fa-solid fa-shop fa-lg" style="color: #FF5C28;"></i></div>
+                    <div class="fw-bold"><a href="#" class="text-black text-decoration-none">Promotion</a></div>
+                </div>
+                <div class="d-flex flex-row gap-2">
+                    <div><i class="fa-solid fa-person-walking fa-lg" style="color: #FF5C28;"></i></div>
+                    <div class="fw-bold"><a href="#" class="text-black text-decoration-none">Newcomers</a></div>
+                </div>
+                <div class="d-flex flex-row gap-2">
+                    <div><i class="fa-solid fa-award fa-lg" style="color: #FF5C28;"></i></div>
+                    <div class="fw-bold"><a href="#" class="text-black text-decoration-none">Best Sellers</a></div>
+                </div>
+                <div class="d-flex flex-row gap-2">
+                    <div><i class="fa-solid fa-ranking-star fa-lg" style="color: #FF5C28;"></i></div>
+                    <div class="fw-bold"><a href="#" class="text-black text-decoration-none">Top Rated</a></div>
+                </div>
+                <div class="d-flex flex-row gap-2">
+                    <div><i class="fa-solid fa-shapes fa-lg" style="color: #FF5C28;"></i></div>
+                    <div class="fw-bold"><a href="#" class="text-black text-decoration-none">All</a></div>
+                </div>
+            </div>
+
+            <!-- Foods -->
+
+            <div class="d-flex flex-row w-100 justify-content-between px-5 mt-5">
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex flex-column">
+                        <div><img src="assets/Rectangle 12.png" alt=""></div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="fw-bold fs-5">Fruit Sandwich</div>
+                            <div class="fw-bold fs-5" style="color: #FF5C28;">$39</div>
+                        </div>
+                        <div class="text-black-50">Fast-Food</div>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex flex-column">
+                        <div><img src="assets/Rectangle 13.png" alt=""></div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="fw-bold fs-5">Garlic Bread</div>
+                            <div class="fw-bold fs-5" style="color: #FF5C28;">$40</div>
+                        </div>
+                        <div class="text-black-50">Fast-Food</div>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex flex-column">
+                        <div><img src="assets/Rectangle 14.png" alt=""></div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="fw-bold fs-5">Ramen</div>
+                            <div class="fw-bold fs-5" style="color: #FF5C28;">$51</div>
+                        </div>
+                        <div class="text-black-50">Fast-Food</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="d-flex flex-row w-100 justify-content-between px-5 mt-4">
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex flex-column">
+                        <div><img src="assets/Rectangle 15.png" alt=""></div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="fw-bold fs-5">Noodles</div>
+                            <div class="fw-bold fs-5" style="color: #FF5C28;">$20</div>
+                        </div>
+                        <div class="text-black-50">Fast-Food</div>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex flex-column">
+                        <div><img src="assets/Rectangle 16.png" alt=""></div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="fw-bold fs-5">Fish</div>
+                            <div class="fw-bold fs-5" style="color: #FF5C28;">$39</div>
+                        </div>
+                        <div class="text-black-50">Fast-Food</div>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex flex-column">
+                        <div><img src="assets/Rectangle 17.png" alt=""></div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="fw-bold fs-5">Panner Soup</div>
+                            <div class="fw-bold fs-5" style="color: #FF5C28;">$39</div>
+                        </div>
+                        <div class="text-black-50">Fast-Food</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="d-flex flex-row w-100 justify-content-between px-5 mt-4">
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex flex-column">
+                        <div><img src="assets/Rectangle 12.png" alt=""></div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="fw-bold fs-5">Biryani</div>
+                            <div class="fw-bold fs-5" style="color: #FF5C28;">$39</div>
+                        </div>
+                        <div class="text-black-50">Fast-Food</div>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex flex-column">
+                        <div><img src="assets/Rectangle 13.png" alt=""></div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="fw-bold fs-5">Momos</div>
+                            <div class="fw-bold fs-5" style="color: #FF5C28;">$39</div>
+                        </div>
+                        <div class="text-black-50">Fast-Food</div>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex flex-column">
+                        <div><img src="assets/Rectangle 14.png" alt=""></div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="fw-bold fs-5">Panner Soup</div>
+                            <div class="fw-bold fs-5" style="color: #FF5C28;">$39</div>
+                        </div>
+                        <div class="text-black-50">Fast-Food</div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-row w-100 justify-content-between px-5 mt-4">
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex flex-column">
+                        <div><img src="assets/Rectangle 15.png" alt=""></div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="fw-bold fs-5">Chicken</div>
+                            <div class="fw-bold fs-5" style="color: #FF5C28;">$39</div>
+                        </div>
+                        <div class="text-black-50">Fast-Food</div>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex flex-column">
+                        <div><img src="assets/Rectangle 16.png" alt=""></div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="fw-bold fs-5">Veg Soup</div>
+                            <div class="fw-bold fs-5" style="color: #FF5C28;">$39</div>
+                        </div>
+                        <div class="text-black-50">Fast-Food</div>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex flex-column">
+                        <div><img src="assets/Rectangle 17.png" alt=""></div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="fw-bold fs-5">Pizza</div>
+                            <div class="fw-bold fs-5" style="color: #FF5C28;">$39</div>
+                        </div>
+                        <div class="text-black-50">Fast-Food</div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- Food-Details -->
+
+        <div class="w-50 p-4" style="background-color: #f3f3f3;">
+            <div class="d-flex flex-column">
+                <div class="fs-4 fw-bold mb-1">My Order</div>
+                <div class="mb-1">Delivery address</div>
+                <div class="fs-4 fw-bold mb-2">1342, Coimbatore</div>
+                <div class="d-flex flex-row justify-content-between">
+                    <div class="text-black-50"><span><i class="fa-solid fa-clock fa-sm"
+                                style="color: #97999d;"></i></span> 40min</div>
+                    <div class="text-black-50"><span><i class="fa-solid fa-location-dot fa-sm"
+                                style="color: #97999d;"></i></span> 20km</div>
+                    <div class="dropdown">
+                        <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-chevron-down fa-xl" style="color: #000000;"></i>
+                        </a>
+
+                        <ul class="dropdown-menu bg-warning">
+                            <li><a class="dropdown-item" href="#">Food</a></li>
+                            <li><a class="dropdown-item" href="#">Drinks</a></li>
+                            <li><a class="dropdown-item" href="#">Snacks</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Items-card  -->
+
+                <div class="bg-white w-100 rounded-5 shadow mt-4">
+                    <div class="d-flex flex-row p-4">
+                        <div class="d-flex align-items-center"><img src="assets/Rectangle 19.png" alt="" class="h-75">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="d-flex flex-row justify-content-between">
+                                <div class="fs-5 fw-bold mt-3">Burger Mozza XL</div>
+                                <div class="fs-5 fw-bold text-warning mt-3">$39</div>
+                            </div>
+                            <div class="fs-5">Extra Cheese</div>
+                            <div class="d-flex flex-row gap-3 mt-4">
+                                <div><button class="btn btn-close"></button>
+                                </div>
+                                <div class="w-50">
+                                    <input class="w-50 fw-bold fs-6 text-black-50 rounded-2" type="number" min="1"
+                                        value="1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-4">
+
+                <div class="bg-white w-100 rounded-5 shadow mt-2">
+                    <div class="d-flex flex-row p-4">
+                        <div class="d-flex align-items-center"><img src="assets/Rectangle 20.png" alt="" class="h-75">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="d-flex flex-row justify-content-between">
+                                <div class="fs-5 fw-bold mt-3">Burger Mozza XL</div>
+                                <div class="fs-5 fw-bold text-warning mt-3">$39</div>
+                            </div>
+                            <div class="fs-5">Extra Cheese</div>
+                            <div class="d-flex flex-row gap-3 mt-4">
+                                <div><button class="btn btn-close"></button>
+                                </div>
+                                <div class="w-50">
+                                    <input class="w-50 fw-bold fs-6 text-black-50 rounded-2" type="number" min="1"
+                                        value="1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-4">
+
+                <!-- Bill -->
+
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="text-black-50">Sub Total</div>
+                        <div class="fw-bold">$162</div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="text-black-50">Fee Delivery</div>
+                        <div class="fw-bold">$9</div>
+                    </div>
+                    <hr>
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="text-black-50">Total</div>
+                        <div class="fw-bold text-success">$171</div>
+                    </div>
+                    <button class="btn btn-warning shadow fs-5 fw-bold text-white w-100 p-2 mt-4">Check Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-100 p-5 bg-dark-subtle mt-5 d-flex align-items-center justify-content-center">
+        <div class="fw-bold mt-5 text-center">2023 Thank You! Visit Again</div>
+    </footer>
+
+
+</body>
+
+</html>
